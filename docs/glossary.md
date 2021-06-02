@@ -12,7 +12,7 @@ My choice of 5 API's is somewhat opinionated, and future-leaning. I've left off 
 
 I'm including WebGPU because I feel it has potential to become a common, widely implemented standard, on which it's possible to build a rich infrastructure of tools, libraries, and applications. The people working on WebGPU are doing a lot of deep thinking about achieving portability, performance, and security on GPU, and these discussions are openly available.
 
-Another resource I've found invaluable for writing (somewhat) portable compute shader code is [gfx-hal]. This project exposes an API much like Vulkan (though not identical), with [backends](https://github.com/gfx-rs/gfx/tree/master/src/backend) for all the major API's. In many cases, the best way to answer the question "how to I do X in API Y" is to find the gfx-hal method for it and look up the code in the respective backend.
+Another resource I've found invaluable for writing (somewhat) portable compute shader code is [gfx-hal]. This project exposes an API much like Vulkan (though not identical), with [backends](https://github.com/gfx-rs/gfx/tree/master/src/backend) for all the major API's. In many cases, the best way to answer the question "how do I do X in API Y" is to find the gfx-hal method for it and look up the code in the respective backend.
 
 In general I favor Vulkan terminology, as it's an open standard, well documented, and in some areas (particularly memory model) is significantly ahead of its competition.
 
